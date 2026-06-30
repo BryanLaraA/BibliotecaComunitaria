@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
- */
 package actividadesEducativas;
-
-/**
- *
- * @author Student
- */
 public enum TipoActividades {
-    
+    tallerLectura("Taller de lectura"), clubeLibro("Club de libro"), charlas("Charla");
+    private String tipo;
+    TipoActividades(String tipo){
+        this.tipo=tipo;
+    }
+    public String getTipo() {
+        return tipo;
+    }
 }

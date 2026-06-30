@@ -61,14 +61,19 @@ public class Actividad {
     }
     public void addUsuarios(Usuario usuario){
         int i = buscarVacio();
-        
-        if(i==-1){
-            System.out.println("No queda espacio");
+        if (!someUsuario(usuario)){
+            if(i==-1){
+                System.out.println("No queda espacio");
+            }
+            else{
+                this.usuarios[i]=usuario;
+                System.out.println("Usuario añadido");
+            }
         }
         else{
-            this.usuarios[i]=usuario;
-            System.out.println("Usuario añadido");
+            System.out.println("Usuario ya ha sido registrado");
         }
+        
     }
     public int buscarVacio(){
         int i = 0;
@@ -88,4 +93,16 @@ public class Actividad {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Actividad" + 
+                "\nactividad: " + actividad.getTipo() + 
+                "\nnombre: " + nombre + 
+                "\nfecha: " + fecha.toString() + 
+                "\nhora: " + hora + 
+                "\ncapacidad: " + capacidad + 
+                "\nusuarios: " + Arrays.toString(usuarios);
+    }
+    
 }
