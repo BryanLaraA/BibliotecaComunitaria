@@ -39,11 +39,18 @@ public class RecursoDigital extends Materialbibliografico{
     
     
     
+
     public boolean verificarAccesoDisponible(){
         if (enlaceacceso == false ){
             System.out.println("No hay enlace disponible");
         }
        return  
+
+    public double verificarAccesoDisponible(){
+    
+        return 0;
+    
+
     }
     
       
