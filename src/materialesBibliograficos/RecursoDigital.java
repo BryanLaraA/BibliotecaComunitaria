@@ -39,7 +39,7 @@ public class RecursoDigital extends Materialbibliografico{
     
     
     public double verificarAccesoDisponible(){
-        if (enlaceacceso == -1){
+        if (enlaceacceso ){
             System.out.println("No hay enlace disponible");
         }
        return  
