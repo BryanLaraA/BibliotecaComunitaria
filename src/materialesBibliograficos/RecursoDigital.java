@@ -45,12 +45,22 @@ public class RecursoDigital extends Materialbibliografico{
        return  
     }
     
-
-    
-    public RecursoDigital(int codigo, String titulo, String autor, LocalDate añoPublicacion, String categoria, boolean estadoDisponibilidad) {
+      
+    public RecursoDigital(int codigo, String titulo, String autor, LocalDate añoPublicacion, String categoria,
+            boolean estadoDisponibilidad,String fotmato,String tamaño,int enlaceacceso) {
         super(codigo, titulo, autor, añoPublicacion, categoria, estadoDisponibilidad);
+        this.formato = formato;
+        this.tamaño = tamaño;
+        this.enlaceacceso= enlaceacceso;
     }
-    
+
+    @Override
+    public String toString() {
+        return "RecursoDigital{" 
+                + "formato=" + formato 
+                + ", tama\u00f1o=" + tamaño 
+                + ", enlaceacceso=" + enlaceacceso + '}';
+    }
     
     
 }
