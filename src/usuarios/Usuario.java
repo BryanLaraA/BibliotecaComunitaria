@@ -1,13 +1,61 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package usuarios;
 
-/**
- *
- * @author Student
- */
+import java.time.LocalDate;
+
+
+
 public class Usuario {
+    
+    private double identificacion;
+    private String nombrecompleto;
+    private LocalDate fechadenacimiento;
+    private double telefono;
+    private String correoelectronico;
+    private String direccion;
+
+    public double getIdentificacion() {
+        return identificacion;
+    }
+
+    public String getNombrecompleto() {
+        return nombrecompleto;
+    }
+
+    public LocalDate getFechadenacimiento() {
+        return fechadenacimiento;
+    }
+
+    public double getTelefono() {
+        return telefono;
+    }
+
+    public String getCorreoelectronico() {
+        return correoelectronico;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setTelefono(double telefono) {
+        this.telefono = telefono;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public Usuario(double identificacion, String nombrecompleto, LocalDate fechadenacimiento, double telefono, String correoelectronico, String direccion) {
+        this.identificacion = identificacion;
+        this.nombrecompleto = nombrecompleto;
+        this.fechadenacimiento = fechadenacimiento;
+        this.telefono = telefono;
+        this.correoelectronico = correoelectronico;
+        this.direccion = direccion;
+    }
+    
+    
+    
     
 }
