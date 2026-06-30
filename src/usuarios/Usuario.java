@@ -2,8 +2,7 @@
 package usuarios;
 
 import java.time.LocalDate;
-
-
+import java.time.Period;
 
 public class Usuario {
     
@@ -13,6 +12,7 @@ public class Usuario {
     private double telefono;
     private String correoelectronico;
     private String direccion;
+    private LocalDate edad;
 
     public double getIdentificacion() {
         return identificacion;
@@ -24,6 +24,10 @@ public class Usuario {
 
     public LocalDate getFechadenacimiento() {
         return fechadenacimiento;
+    }
+    
+    public Period getEdad(){
+        return Period.between(fechadenacimiento,LocalDate.now());
     }
 
     public double getTelefono() {
@@ -54,6 +58,19 @@ public class Usuario {
         this.correoelectronico = correoelectronico;
         this.direccion = direccion;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "identificacion="
+                + identificacion + ", nombrecompleto="
+                + nombrecompleto + ", fechadenacimiento=" 
+                + fechadenacimiento + ", telefono=" 
+                + telefono + ", correoelectronico=" 
+                + correoelectronico + ", direccion=" 
+                + direccion + ", edad="
+                + edad + '}';
+    }
+    
     
     
     
