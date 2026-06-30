@@ -21,7 +21,7 @@ public class RecursoDigital extends Materialbibliografico{
         return enlaceacceso;
     }
     
-    public double getVerificarAccesoDisponible(){
+    public boolean isgetVerificarAccesoDisponible(){
         return verificarAccesoDisponible();
     }
 
@@ -39,8 +39,8 @@ public class RecursoDigital extends Materialbibliografico{
     
     
     
-    public double verificarAccesoDisponible(){
-        if (enlaceacceso ){
+    public boolean verificarAccesoDisponible(){
+        if (enlaceacceso == false ){
             System.out.println("No hay enlace disponible");
         }
        return  
