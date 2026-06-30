@@ -9,7 +9,7 @@ import usuarios.Usuario;
 import materialesBibliograficos.Materialbibliografico;
 /**
  *
- * @author Student
+ * @author Lennox
  */
 public class Pretamo {
     private LocalDate fechaPrestamo;
